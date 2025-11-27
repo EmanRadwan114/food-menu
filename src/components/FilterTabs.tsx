@@ -9,8 +9,6 @@ const FilterTabs: React.FC = () => {
   const { selectedCategory, setMeals } = useContext(MealsContext);
 
   useEffect(() => {
-    console.log(selectedCategory);
-
     const filteredMeals =
       selectedCategory !== "all"
         ? egyptianMenu.filter((item) => item.category === selectedCategory)

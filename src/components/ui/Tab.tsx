@@ -11,7 +11,7 @@ const Tab: React.FC<IProps> = ({ filter }) => {
   return (
     <button
       onClick={() => setSelectedCategory(filter)}
-      className={`px-5 py-1 rounded-md text-gray-800 cursor-pointer ${
+      className={`px-4 py-1 rounded-md text-gray-800 cursor-pointer ${
         selectedCategory === filter ? "bg-lime-950 text-white" : "bg-lime-100"
       }`}
     >
