@@ -32,6 +32,9 @@ const Search: React.FC = () => {
       className="px-3 py-1 border-2 border-orange-700 rounded-md w-full sm:w-[40%] lg:w-[30%] xl:w-[20%] focus-within:outline-gray-500"
       value={searchTerm}
       onChange={handleChange}
+      onBlur={() => {
+        setSearchTerm("");
+      }}
     />
   );
 };

@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
       <div className="container mx-auto pt-40 sm:pt-28 pb-10 px-3 md:px-5">
         <main className="flex flex-col gap-y-10">
@@ -20,7 +20,7 @@ function App() {
         </main>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
