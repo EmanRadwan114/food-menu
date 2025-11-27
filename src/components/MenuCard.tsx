@@ -1,21 +1,30 @@
 import React from "react";
 import type { IMenuItem } from "../types/interfaces";
-
+import { motion } from "motion/react";
 interface IProps {
   item: IMenuItem;
 }
 
 const MenuCard: React.FC<IProps> = ({ item }) => {
   return (
-    <div className="bg-white shadow-md rounded-md group overflow-hidden">
+    <motion.div
+      className="bg-white shadow-md rounded-md overflow-hidden"
+      initial="rest"
+      animate="rest"
+      whileHover="hover"
+      whileInView="visible"
+      layout
+    >
       {/* img & category*/}
       <div className="relative">
-        <img
+        <motion.img
           src={item.thumbnail}
           alt={item.title}
-          className="w-full h-64 rounded-t-md group-hover:scale-110 transition-transform duration-700"
+          className="w-full h-64 rounded-t-md"
+          variants={{ rest: { scale: 1 }, hover: { scale: 1.1 } }}
+          transition={{ duration: 0.5 }}
         />
-        <div className="absolute inset-0 bg-black/15 group-hover:scale-110 transition-transform duration-700"></div>
+        <div className="absolute inset-0 bg-black/15"></div>
         <div className="absolute top-4 end-4 bg-orange-700 px-3 py-0.5 rounded-2xl text-white z-50">
           <span className="capitalize">{item.category}</span>
         </div>
@@ -44,7 +53,7 @@ const MenuCard: React.FC<IProps> = ({ item }) => {
           {item.price} EGP
         </span>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
