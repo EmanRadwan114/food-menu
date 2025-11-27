@@ -1,5 +1,5 @@
 import React from "react";
-import type { IMenuItem } from "../../types/interfaces";
+import type { IMenuItem } from "../types/interfaces";
 
 interface IProps {
   item: IMenuItem;
@@ -15,10 +15,9 @@ const MenuCard: React.FC<IProps> = ({ item }) => {
           alt={item.title}
           className="w-full h-64 rounded-t-md group-hover:scale-110 transition-transform duration-700"
         />
-        <div className="absolute inset-0 bg-black/15">
-          <div className="absolute top-4 end-4 bg-orange-700 px-3 py-0.5 rounded-2xl text-white">
-            <span className="capitalize">{item.category}</span>
-          </div>
+        <div className="absolute inset-0 bg-black/15 group-hover:scale-110 transition-transform duration-700"></div>
+        <div className="absolute top-4 end-4 bg-orange-700 px-3 py-0.5 rounded-2xl text-white z-50">
+          <span className="capitalize">{item.category}</span>
         </div>
       </div>
       {/* content */}
@@ -27,15 +26,23 @@ const MenuCard: React.FC<IProps> = ({ item }) => {
           {item.title}
         </h3>
         <p className="text-gray-600 mb-3">{item.description}</p>
-        <div className="flex flex-wrap gap-2">
+        {/* ingredients */}
+        <div className="flex flex-wrap gap-2 mb-4">
           {item.ingredients.map((ingredient) => (
-            <div className="rounded-md py-0.5 px-3 bg-lime-100">
+            <div
+              className="rounded-md py-0.5 px-3 bg-lime-100"
+              key={ingredient}
+            >
               <span className="capitalize text-sm text-gray-800">
                 {ingredient}
               </span>
             </div>
           ))}
         </div>
+        {/* price */}
+        <span className="font-semibold bg-orange-700 px-3 py-1.5 rounded-md text-white ">
+          {item.price} EGP
+        </span>
       </div>
     </div>
   );
