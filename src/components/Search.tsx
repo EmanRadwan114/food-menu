@@ -26,15 +26,13 @@ const Search: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row gap-1.5 flex-wrap">
-      <input
-        type="search"
-        placeholder="Search a Meal..."
-        className="px-3 py-1 border-2 border-orange-700 rounded-md md:w-[50%] lg:w-[30%] focus-within:outline-gray-500"
-        value={searchTerm}
-        onChange={handleChange}
-      />
-    </div>
+    <input
+      type="search"
+      placeholder="Search a Meal..."
+      className="px-3 py-1 border-2 border-orange-700 rounded-md w-full sm:w-[40%] lg:w-[30%] xl:w-[20%] focus-within:outline-gray-500"
+      value={searchTerm}
+      onChange={handleChange}
+    />
   );
 };
 
