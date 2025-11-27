@@ -35,7 +35,7 @@ export const egyptianMenu: IMenuItem[] = [
     title: "Koshari",
     description:
       "Egypt's national dish made with rice, macaroni, lentils, and spicy tomato sauce.",
-    price: 45,
+    price: 65,
     thumbnail: "https://i.postimg.cc/wj1Qknb1/koshari.png",
     ingredients: [
       "rice",
@@ -52,7 +52,7 @@ export const egyptianMenu: IMenuItem[] = [
     title: "Molokhia with Chicken",
     description:
       "Green herb soup made from jute leaves, served with rice and roasted chicken.",
-    price: 90,
+    price: 150,
     thumbnail:
       "https://i.pinimg.com/736x/6e/e9/10/6ee910a13c2632fbcde52090a722509b.jpg",
     ingredients: [
@@ -70,7 +70,7 @@ export const egyptianMenu: IMenuItem[] = [
     title: "Warak Enab",
     description:
       "Rice-stuffed vine leaves seasoned with herbs, cooked in lemon broth.",
-    price: 70,
+    price: 120,
     thumbnail:
       "https://i.pinimg.com/736x/18/9b/5f/189b5f76a0191a1eb1142c9de96bd701.jpg",
     ingredients: [
@@ -88,7 +88,7 @@ export const egyptianMenu: IMenuItem[] = [
     title: "Hawawshi",
     description:
       "Spiced minced meat stuffed inside baladi bread and baked to perfection.",
-    price: 55,
+    price: 160,
     thumbnail:
       "https://img.freepik.com/free-photo/vegetables-kish-with-cabbages-sauces_140725-9295.jpg?uid=R203565888&ga=GA1.1.979538226.1749313385&semt=ais_hybrid&w=740&q=80",
     ingredients: ["baladi bread", "minced beef", "onions", "garlic", "spices"],
@@ -99,7 +99,7 @@ export const egyptianMenu: IMenuItem[] = [
     title: "Kebda Eskandarani",
     description:
       "Sautéed beef liver with garlic, cumin, and chili, served in a soft roll.",
-    price: 50,
+    price: 110,
     thumbnail:
       "https://img.freepik.com/free-photo/roast-chicken-liver-with-vegetables-wooden-background-flat-lay-top-view_2829-6475.jpg?uid=R203565888&ga=GA1.1.979538226.1749313385&semt=ais_hybrid&w=740&q=80",
     ingredients: ["beef liver", "garlic", "chili", "cumin", "oil", "bread"],
@@ -110,7 +110,7 @@ export const egyptianMenu: IMenuItem[] = [
     title: "Shawarma",
     description:
       "Marinated beef or chicken slices served in a wrap with tahini and pickles.",
-    price: 60,
+    price: 170,
     thumbnail:
       "https://img.freepik.com/free-photo/side-view-shawarma-with-fried-potatoes-ayran-mayonnaise-board-cookware_176474-3213.jpg?uid=R203565888&ga=GA1.1.979538226.1749313385&semt=ais_hybrid&w=740&q=80",
     ingredients: ["beef or chicken", "tahini", "pickles", "spices", "bread"],
@@ -121,7 +121,7 @@ export const egyptianMenu: IMenuItem[] = [
     title: "Mahshi",
     description:
       "Assorted vegetables stuffed with rice and herbs, cooked in tomato broth.",
-    price: 75,
+    price: 180,
     thumbnail:
       "https://img.freepik.com/free-photo/top-view-leaf-dolma-eastern-meat-meal-rolled-inside-green-leaves-with-bread-cabbage-dolma-dark-blue-desk-meat-dinner-dish-east-meal_140725-64871.jpg?uid=R203565888&ga=GA1.1.979538226.1749313385&semt=ais_hybrid&w=740&q=80",
     ingredients: [
@@ -139,7 +139,7 @@ export const egyptianMenu: IMenuItem[] = [
     title: "Besarah",
     description:
       "Creamy dip made from fava beans, herbs, and onions – a traditional Egyptian vegan dish.",
-    price: 25,
+    price: 70,
     thumbnail: "https://i.postimg.cc/XYZ77gXP/besarah.png",
     ingredients: ["fava beans", "dill", "leeks", "parsley", "onions"],
     category: "breakfast",
@@ -149,7 +149,7 @@ export const egyptianMenu: IMenuItem[] = [
     title: "Sayadeya Fish",
     description:
       "Alexandrian-style baked fish served with caramelized-onion rice.",
-    price: 120,
+    price: 220,
     thumbnail:
       "https://img.freepik.com/free-photo/arabian-sheri-fish-mandi-rice-with-lemon-slice-served-dish-top-view-middle-east-food_505751-5137.jpg?uid=R203565888&ga=GA1.1.979538226.1749313385&semt=ais_hybrid&w=740&q=80",
     ingredients: ["fish", "onion", "rice", "spices", "broth"],
@@ -160,7 +160,7 @@ export const egyptianMenu: IMenuItem[] = [
     title: "Feteer Meshaltet",
     description:
       "Flaky layered pastry served plain, with honey, cheese, or chocolate.",
-    price: 40,
+    price: 190,
     thumbnail:
       "https://i.pinimg.com/474x/33/f4/6f/33f46f1eb56f12de7e83c444c9267fa6.jpg",
     ingredients: ["flour", "butter", "oil", "honey", "cheese"],
